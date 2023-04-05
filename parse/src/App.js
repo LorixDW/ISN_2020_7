@@ -1,12 +1,12 @@
 import './App.css';
-import PersonsList from './PersonsList';
+
 
 function App() {
   return (
-    <div >
-      <PersonsList></PersonsList>
+    <div className="App" id='app'>
     </div>
   );
 }
+
 
 export default App;
