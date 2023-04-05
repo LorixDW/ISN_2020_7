@@ -7,7 +7,11 @@
     <title>Document</title>
     <link href="./css/main.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    
+    <script>
+        function Notify(){
+            alert("Макет был реализован Каргапольцеввым Станиславом Владимировичем. Вариант № 6.")
+        }
+    </script>
 </head>
 <body>
     <header >
@@ -48,7 +52,7 @@
                 md:text-[28px] md:leading-[28px]">Menu</button>
                 <div class="bg-slate-800 rounded-xl absolute left-[20px] top-[50px] flex gap-4 p-[10px]
                 md:p-[45px] 
-                bg-opacity-20" id="menu">
+                bg-opacity-20 hidden" id="menu">
                     <div>
                         <ul class="font-normal text-[18px] leading-[25px]
                         md:text-[24px] md:leading-[40px]">
@@ -145,7 +149,9 @@
             <div class="mt-[48px]
             lg:flex lg:justify-between lg:mt-[64px] lg:col-start-3 lg:col-span-9">
                 <div class="items-center flex">
-                    <img src="./img/Play buton.svg">
+                    <button onclick="Notify()">
+                        <img src="./img/Play buton.svg">
+                    </button>
                     <p class="ml-[20px] font-normal text-[18px] leading-[20px]
                     md:text-[20px] md:leading-[24px]
                     xl:text-[17px]">Play Video</p>
