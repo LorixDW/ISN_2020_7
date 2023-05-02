@@ -37,6 +37,7 @@ function VideoListUpdate() {
         del.addEventListener("click", function(e){
             player.innerHTML = ""
             localStorage.removeItem("video")
+            localStorage.removeItem("name")
             VideoListUpdate()
         })
         list.append(p, view, del)
